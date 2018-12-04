@@ -1,13 +1,10 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
-#include "lists.h"
 /**
  *check_cycle - entry point
- *Description: check if the linked list has cycle in it
- *@list: list of value
- *Return: 0 or 1
+ *Description : check if the linked list has cycle in it
+ *@list : list of value
+ *Return : 0 or 1
  */
 int check_cycle(listint_t *list)
 {
@@ -21,7 +18,7 @@ int check_cycle(listint_t *list)
 	{
 		head = head->next;
 		afterhead = afterhead->next->next;
-		if (afterhead == head)
+		if (head == afterhead)
 			return (1);
 	}
 	return (0);
