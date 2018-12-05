@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-from sys import argv
 
 
-if len(argv) == 1:
-    print("0 arguments.")
-    exit()
-elif len(argv) == 2:
-    print("1 argument:")
-else:
-    print("{} arguments:".format(len(argv) -1))
-i = 1
-for value in argv[1:]:
-    print("{:d}: {}".format(i, value))
-    i = i + 1
+def main():
+    import sys
+    if (len(sys.argv) == 1):
+        print("0 arguments.")
+        exit()
+    elif (len(sys.argv) == 2):
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(len(sys.argv) -1))
+    i = 1
+    for value in sys.argv[1:]:
+        print("{:d}: {}".format(i, value))
+        i = i + 1
+if (__name__ == "__main__"):
+    main()
