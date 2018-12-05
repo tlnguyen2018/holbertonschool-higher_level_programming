@@ -9,10 +9,10 @@ def main():
     elif (len(sys.argv) == 2):
         print("1 argument:")
     else:
-        print("{} arguments:".format(len(sys.argv) -1))
+        print("{} arguments:".format(len(sys.argv) - 1))
     i = 1
     for value in sys.argv[1:]:
-        print("{:d}: {}".format(i, value))
+        print("{:}: {}".format(i, value))
         i = i + 1
 if (__name__ == "__main__"):
     main()
