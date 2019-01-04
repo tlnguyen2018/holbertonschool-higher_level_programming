@@ -32,12 +32,14 @@ class Square:
     """
     Getter method position
     """
+    @property
     def position(self):
         return (self.__position)
 
     """
     Position method setter
     """
+    @position.setter
     def position(self, value):
         if type(value) != tuple or len(value) != 2 or
         type(value[0]) != int or type(value[1]) != int or
@@ -59,11 +61,11 @@ class Square:
         if self.__size is 0:
             print("")
         else:
-            for i in range(self.__position[1]):
+            for a in range(self.__position[1]):
                 print("")
-            for j in range(self.__size):
-                for i in range(self.__position[0]):
+            for b in range(self.__size):
+                for c in range(self.__position[0]):
                     print(" ", end="")
-                for j in range(self.__size):
+                for d in range(self.__size):
                     print("#", end="")
                 print("")
