@@ -63,7 +63,7 @@ class Square:
         if self.__size is 0:
             print()
         else:
-            position.split() = x, y
+            self.position = x, y
             for i in range(y):
                 print()
             for i in range(self.size):
