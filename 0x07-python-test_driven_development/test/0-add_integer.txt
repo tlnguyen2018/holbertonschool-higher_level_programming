@@ -1,3 +1,29 @@
-"""
-Test file for 0-add_integer.py
-"""
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(0, 5)
+5
+
+>>> add_integer(8, 0)
+8
+
+>>> add_integer(-2, 12)
+10
+
+>>> add_integer(10, -2)
+8
+
+>>> add_integer(2)
+100
+
+>>> add_integer(100.1, 2)
+102
+
+>>> add_integer(10000, "Peter")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer("Peter")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
