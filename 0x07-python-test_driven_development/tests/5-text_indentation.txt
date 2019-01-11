@@ -1,0 +1,7 @@
+This is a doctest for 5-text_indentation.txt
+Each ">>>" is an python cell
+
+>>>text_indentation = __import__('5-text_indentation').text_indentation
+
+>>>text_indentation("""Hello, my name is Peter. I am attending at Holberton
+school. The gold is to become full-stack software enginneer in 2019?""")
