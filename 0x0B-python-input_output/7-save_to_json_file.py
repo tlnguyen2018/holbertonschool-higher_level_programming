@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+"""
+Write and objects to text file
+From Python to json
+"""
+
+
+import json
+
+
+def save_to_json_file(my_obj, filename):
+    with open(filename, mode="w", encoding="utf-8") as f:
+        jfile = json.dump(my_obj, f)
+    return (jfile)
