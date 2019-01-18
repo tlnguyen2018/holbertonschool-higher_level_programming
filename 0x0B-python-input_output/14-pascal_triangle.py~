@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+"""
+Pascal Triangle
+"""
+
+
+def pascal_triangle(n):
+    list = []
+    if (n <= 0):
+        return (list)
+    for row in range(n):
+        """depth of triangle"""
+        num_str = (11 ** row)
+        """example 11 ** 2 = 121; 11 ** 3 = 1331"""
+        slice_str = [int(n) for n in str(num_str)]
+        """slice 121 to 1 2 1"""
+        list.appends[slice_str]
+    return list
